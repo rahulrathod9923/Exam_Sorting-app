@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exam Sort App</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<div class="App">
+		<div class="heading">
+			<h1>Exam Sort App</h1>
+		</div>
+
+		<div class="exam-form">
+			<span class="input">
+				<input type="hidden" id="idInput" placeholder="ID">
+			</span>
+			<span class="input">
+				<label for="examInput">Exam Name:</label>
+				<input type="text" id="examInput" placeholder="Enter exam name">
+			</span>
+			<span class="input">
+				<label for="startDateInput">Start Date:</label>
+				<input type="date" id="startDateInput">
+			</span>
+			<span class="input">
+				<label for="endDateInput">End Date:</label>
+				<input type="date" id="endDateInput">
+			</span>
+			<span class="input">
+				<label for="retroDateInput">Retro Date:</label>
+				<input type="date" id="retroDateInput">
+			</span>
+			<span class="button">
+				<button class="saveExam">Save</button>
+			</span>
+		</div>
+
+		<div class="exam-list">
+			<h2>All Exams</h2>
+			<table id="exam-list-items">
+				<thead>
+					<tr>
+						<th>Exam</th>
+						<th>Start Date</th>
+						<th>End Date</th>
+						<th>Retro Date</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+		<div class="exam-list">
+			<h2>All Sorted Exams</h2>
+			<table id="sorted-exam-list-items">
+				<thead>
+					<tr>
+						<th>Exam</th>
+						<th>Start Date</th>
+						<th>End Date</th>
+						<th>Retro Date</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody></tbody>
+			</table>
+		</div>
+
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
